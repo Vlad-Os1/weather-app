@@ -22,7 +22,7 @@ export default async function getWeatherData(cityName) {
       location: data.resolvedAddress,
     };
   } catch (error) {
-    console.error('Error fetching weather data:', error.mesage);
+    console.error('Error fetching weather data:', error.message);
     return null;
   }
 }
