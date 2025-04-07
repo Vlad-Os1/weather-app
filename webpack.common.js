@@ -9,11 +9,28 @@ module.exports = {
     clean: true,
   },
   mode: 'development',
+  devtool: 'inline-source-map',
+  devServer: {
+    static: './dist',
+    hot: true,
+    watchFiles: ['./src/template.html'],
+    port: 8085,
+    client: {
+      overlay: {
+        warnings: true,
+        errors: true,
+      },
+    },
+  },
   module: {
     rules: [
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
       },
     ],
   },
