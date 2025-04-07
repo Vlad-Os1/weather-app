@@ -1,3 +1,4 @@
+import './styles.css';
 import getWeatherData from './modules/weather.js';
 
 (async () => {

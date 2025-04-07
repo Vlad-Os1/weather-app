@@ -3,7 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>weatherApp</title>
+    <title>WeatherApp</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>Weather App</h1>
+    </header>
+    <main class="main-content">
+      <form action="" id="get-weather-form" class="weather-form">
+        <input
+          type="text"
+          id="city-name"
+          class="get-weather-input"
+          placeholder="city name"
+          required
+        />
+        <button type="submit" id="submit-weather-form-btn" class="submit-btn">
+          Search
+        </button>
+      </form>
+      <div class="search-result">
+        <h1>Kyiv</h1>
+        <p>28C</p>
+        <p>5m/s</p>
+        <p>93.44</p>
+        <p>Overcast</p>
+      </div>
+    </main>
+  </body>
 </html>
