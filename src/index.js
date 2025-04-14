@@ -1,7 +1,4 @@
 import './styles.css';
-import getWeatherData from './modules/weather.js';
+import DOM from './modules/dom.js';
 
-(async () => {
-  let result = await getWeatherData('Kryve Ozero');
-  console.log(result);
-})();
+DOM.setEvents();
